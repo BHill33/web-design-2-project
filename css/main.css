@@ -1,0 +1,84 @@
+html {
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #231F20;
+  line-height: 1.5;
+  font-family: 'Jost', sans-serif;
+  /* max-width: 1080px;
+  align-content: center;
+  margin: auto; */
+}
+
+img {
+  max-width: 100%;
+}
+
+nav {
+  background-color: #9DD9E2;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.hero-banner {
+  width: 100%;
+  height: 80vh;
+  background-color: #000;
+  background-image: url('https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2674&q=80');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.portrait {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.ice-cream {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.about-me {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-auto-rows: 1fr;
+}
+
+.experience {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-auto-rows: 1fr;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: .5rem;
+}
