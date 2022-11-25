@@ -8,24 +8,29 @@
   <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header role="banner">
+  <header>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
     <nav role="navigation">
-      <h1><img class="logo"src="images/bhdesigns-logo.svg" alt="BH Designs logo"></h1>
+    <h1><img class="logo"src="images/bhdesigns-logo.svg" alt="BH Designs logo"></h1>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="pages/show-case.html">Show Case</a></li>
-        <li><a href="pages/message-me.html">Message Me</a></li>
+        <li><a href="index.html" aria-label="Home">Home</a></li>
+        <li><a href="pages/show-case.html" aria-label="Show Case">Show Case</a></li>
+        <li><a href="pages/message-me.html" aria-label="Message Me">Message Me</a></li>
       </ul>
     </nav>
-    <img class="mountain"src="images/mountain.jpg" alt="Black and white mountains">
   </header>
-  <main>
+    <div class="hero-banner">
+    </div>
+  <main role="main">
     <article class="about-me">
       <img class="portrait"src="images/portrait.jpg" alt="Black and white photo of the designer">
-      <div>
+      <section>
         <h2>About Me</h2>
         <p>I am 21 years old and am currently a student. When I first got out of high school I went to university and studied for a year, majoring in Theology. After my first year I realized that I wanted to do something completely different with my life and I ended up in the Graphic Design program at Algonquin. I am an easy-going person and in my free time I like to find new music, spend time with my dog, or play video games. My family is also very important to me, and you can find us playing card games every weekend.</p>
-      </div>
+      </section>
     </article>
     <article class="experience">
       <img class="ice-cream"src="images/ice-cream.jpg" alt="Sketches of ice cream">
@@ -41,13 +46,13 @@
       <p>Slack: bhillier33</p>
     </article>
   </main>
+  <footer role="contentinfo">
+    <img class="logo-2"src="images/bhdesigns-logo-2.svg" alt="BH Designs full logo">
+    <div class="social">
+      <img class="facebook"src="images/facebook.svg" alt="Facebook Link">
+      <img class="instagram"src="images/instagram.svg" alt="Instagram Link">
+      <img class="twitter"src="images/twitter.svg" alt="Twitter Link">
+    </div>
+  </footer>
 </body>
-<footer>
-  <img class="logo-2"src="images/bhdesigns-logo-2.svg" alt="BH Designs full logo">
-  <div class="social">
-    <img class="facebook"src="images/facebook.svg" alt="Facebook Link">
-    <img class="instagram"src="images/instagram.svg" alt="Instagram Link">
-    <img class="twitter"src="images/twitter.svg" alt="Twitter Link">
-  </div>
-</footer>
 </html>
