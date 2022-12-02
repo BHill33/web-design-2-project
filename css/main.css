@@ -47,7 +47,7 @@ header {
 }
 
 nav {
-  position: fixed;
+  position: absolute;
   display: none;
   text-align: right;
 }
@@ -117,7 +117,7 @@ nav ul li a:hover {
   background-size: cover;
 }
 
-main {
+.main {
   margin: 2rem;
 }
 
@@ -216,6 +216,51 @@ footer {
   height: 20vh;
 }
 
+.contactme {
+  margin: 2rem;
+}
+
+.message {
+  margin-bottom: 1rem;
+}
+
+form {
+  margin: 0 1rem;
+  padding: 1rem;
+  background-color: #9DD9E2;
+}
+
+input {
+  width: 100%;
+  border: 2px solid #000;
+  margin-bottom: 1rem;
+  background-color: #fff;
+}
+
+.subject {
+  border-bottom: 2px solid #000;
+  margin-bottom: 0;
+}
+
+.messagebox {
+  padding-bottom: 6rem;
+  border-top: 2px solid #000;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+button {
+  font-size: .5rem;
+  font-weight: bold;
+  /* position: relative;
+  left: 171px; */
+  color: #000;
+  background-color: #E6E7E8;
+  border: none;
+  border-radius: 3em;
+  padding: .3rem .5rem;
+}
+
 @media only screen and (min-width: 768px) {
 
   .hero-banner {
@@ -306,16 +351,46 @@ footer {
     max-width: 80%;
   }
 
+  .messagemain {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .mountain-2 {
+    max-width: 50%;
+  }
+
+  .subject {
+    margin-bottom: .2rem;
+  }
+  .message {
+    margin-bottom: 1rem;
+  }
+
+  input {
+    font-size: 1rem;
+  }
+
+  .messagebox {
+    padding-bottom: 10rem;
+  }
+
   .facebook, .instagram, .twitter {
     max-width: 8%;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
   }
 
 }
 
 @media only screen and (min-width: 1280px) {
 
-  main {
-  max-width: 1080px;
+  .main {
+  max-width: 960px;
   align-content: center;
   margin: auto;
   }
@@ -399,6 +474,14 @@ footer {
 
   .facebook, .instagram, .twitter {
     max-width: 6%;
+  }
+
+  .mountain-2 {
+    max-width: 50%;
+  }
+
+  .messagebox {
+    padding-bottom: 15rem;
   }
 
   .social {

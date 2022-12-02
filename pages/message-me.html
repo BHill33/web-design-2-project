@@ -23,13 +23,24 @@
       </ul>
     </nav>
   </header>
-  <img class="mountain-2"src="../images/mountain-2.jpg" alt="Black and white snowy mountain">
-  <main role="main">
-    <h2 class="message">Send Me A Message!</h2>
-    <p>Name</p>
-    <p>Email</p>
-    <p>Subject</p>
-    <p>Send Message</p>
+  <main role="main" class="messagemain">
+    <img class="mountain-2"src="../images/mountain-2.jpg" alt="Black and white snowy mountain">
+    <article class="contactme">
+      <h2 class="message">Send Me A Message!</h2>
+      <form action="">
+        <label for="name"></label>
+        <input type"text" placeholder="Name:">
+        <br>
+        <label for="email"></label>
+        <input type"text" placeholder="Email:">
+        <br>
+        <label for="subject"></label>
+        <input type"text" placeholder="Subject:" class="subject">
+        <label for="message"></label>
+        <input type"text" class="messagebox" placeholder="Write your message here">
+        <button>Send Message</button>
+      </form>
+    </article>
   </main>
 </body>
 <footer role="contentinfo">
